@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conveti.css">
+    <link rel="shortcut icon" href="forex.png" type="image/x-icon">
+    <title>converti</title>
+</head>
+<body>
+<div class="container">
+  <div class="left">
+    <img src="logo1.png" alt="Coins with arrow"/>
+  </div>
+
+  <div class="right">
+    <div class="word">converti</div>
+    <div class="currency-row">
+      <select id="fromCurrency">
+        <option value="USD">USD - US Dollar ($)</option>
+        <option value="EUR">EUR - Euro (€)</option>
+        <option value="TND">TND - Tunisian Dinar (د.ت)</option>
+        <option value="MAD">MAD - Moroccan Dirham (د.م.)</option>
+        <option value="JPY">JPY - Japanese Yen (¥)</option>
+      </select>
+      <input type="text" id="fromAmount" placeholder="0" readonly />
+    </div>
+
+    <div class="currency-row">
+      <select id="toCurrency">
+        <option value="USD">USD - US Dollar ($)</option>
+        <option value="EUR">EUR - Euro (€)</option>
+        <option value="TND">TND - Tunisian Dinar (د.ت)</option>
+        <option value="MAD">MAD - Moroccan Dirham (د.م.)</option>
+        <option value="JPY">JPY - Japanese Yen (¥)</option>
+      </select>
+      <input type="text" id="toAmount" placeholder="0" readonly />
+    </div>
+
+    <button class="convert-btn" onclick="convertCurrency()">convert</button>
+
+    <div class="keypad">
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="appendNumber('0')">0</button>
+      <button onclick="appendNumber('.')">,</button>
+      <button onclick="clearInput()">⌫</button>
+    </div>
+  </div>
+</div>
+  <script src="js.js"></script>
+</body>
+</html>
